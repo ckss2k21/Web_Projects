@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Whole container of resume starts*/
+.resume-container {
+    width: 100%;
+    background-color: rgb(225, 247, 247);
+    padding: 10px;
+}
+/* Whole container of resume Ends*/
+/*Head part of resume including vertical bar, photo, summary and contact info starts*/
+.resume-header{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+.vertical-bar {
+    height: inherit;
+    background-color: grey;
+    width: 1%;
+    border-radius: 5px;
+}
+.professional-summary {
+    margin-left: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 69%;
+    border-top-left-radius: 5px;
+    background-color: rgb(205, 208, 210);
+    border-bottom-right-radius: 5px;
+}
+.profile-image {
+    width: 20%;
+    padding: 10px;
+    
+}
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(225, 149, 7);
+    box-shadow: 2px 2px 8px 2px rgb(225, 149, 7);;
+}
+.profile-content
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10px;
+}
+.profile-content p{
+    padding: 10px;
+    text-align: justify;
+}
+.profile-content h1 , .profile-content h3 {
+    padding-left: 10px ;
+}
+.contact-info{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    background-color: rgb(66, 65, 65);
+    border-top-right-radius: 5px;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 4px;
+    border-bottom-left-radius: 5px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.contact  p {
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.contact a {
+    color: white;
+}
+.contact a:hover {
+    color: blue;
+}
+.img-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(225, 149, 7);
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/*Head part of resume including vertical bar, photo, summary and contact info Ends*/
+/* Main Part of Resume starts here including left side and right side */
+.resume-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5px;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(205, 208, 210);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+     text-align: justify;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+
+}
+.main-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.header-img-icon {
+    background-color:rgb(225, 149, 7);;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.header-name {
+    margin-left: 10px;
+    padding: 5px;
+    /* text-decoration: underline; */
+}
+.company-detail {
+    display: flex;
+    flex-direction: column;
+}
+.experience-text {
+    margin-left: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+.company-detail {
+    display: flex;
+    flex-direction: column;
+}
+.masters {
+    display: flex;
+    flex-direction: column;
+
+}
+.masters ul, .batchlors ul {
+    padding : 10px 0px 10px 30px;
+    line-height: 1.5;
+}
+.skill-details {
+    padding: 20px 20px 10px 20px;
+    line-height: 1.5;
+}
+.achievements {
+    padding:20px;
+    line-height: 1.5;
+}
+.projects {
+    padding: 20px;
+    line-height: 1.5;
+}
+/* Main Part of Resume Ends here including left side and right side */
+/* For Mobile compatibility starts here*/
+@media screen and (max-width:768px){
+    .resume-header {
+        flex-direction: column;
+        /* background-color: green; */
+    }
+    .vertical-bar {
+        visibility: hidden;
+    }
+    .professional-summary, .contact-info {
+        width: 100%;
+    }
+    .resume-main {
+        flex-direction: column;
+    }
+    .left-content, .right-content {
+        width: 100%;
+    }
+}
+@media screen and (max-width:550px) {
+    .professional-summary {
+        flex-direction: column;
+    }
+    .profile-image, .profile-content {
+        width: 100%;
+    }
+}
+/* For Mobile compatibility Ends here*/
